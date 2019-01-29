@@ -35,7 +35,7 @@ all: $(TARGET)
 
 $(TARGET): $(OBJS)
 	@echo "LDFLAGS:$(LDFLAGS)" 
-	$(CC) -o $@ $^ -pthread -lm ./lib/libnl-tiny.a
+	$(CC) -o $@ $^ -pthread 
 
 .c.o:
 	$(CC)  $(CFLAGS) -c -o  $@ $< 
@@ -43,6 +43,6 @@ $(TARGET): $(OBJS)
 .cpp.o:
 	$(CPP) $(CFLAGS) -c -o $@ $<
 clean:
-	rm -f $(TARGET) $(OBJS) *.o;
+	rm -f *.o;
 
 
