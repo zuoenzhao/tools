@@ -7,7 +7,7 @@ AR	= @echo " AR	$@"; $(CROSS)ar
 RM	= @echo " RM	$@"; rm -f
 
 
-CFLAGS	+= -Wall -g
+#CFLAGS	+= -Wall -g
 CFLAGS	+= -fomit-frame-pointer
 CFLAGS	+= -Wstrict-prototypes
 

@@ -78,6 +78,7 @@ struct	iwreq
 typedef struct WlanInfo
 {
 	char ethName[10];
+	char NetTools[10];	//使用的工具，iw或者iwconfig
 	char srcMac[6];		//源mac地址过滤，如果符合，存入内存
 	char dstMac[6];		//目的mac地址过滤，如果符合，存入内存
 	char recType;	//0xff接收三种帧 0x00接收管理帧 0x1接收控制帧 0x2接收数据帧
